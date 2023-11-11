@@ -13,11 +13,11 @@ Simple implementation of light-weight GAN structure proposed in <a href="https:/
 256x256 Pictures of pandas generated in about 16 hours of training on a single GPU.
 
 
-![Alt text](images/klimt_gen_sample_1024.png)
+![Alt text](images/klimt_gen_sample_256.jpg)
 
 256x256 Pictures of Klimt generated in about 16 hours of training on a single GPU. 
 
-The panda pictures are of much better quality than the Klimt pictures, leading to the conclusion that the model isn't complex enough.
+The panda pictures are of much better quality than the Klimt pictures, leading to the conclusion that the diversity of the training set is too high for the model (the model isn't complex enough).
 
 
 ## Transfer learning with the Style-GAN3 model
