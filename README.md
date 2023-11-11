@@ -8,12 +8,12 @@ The main problems were:
 ## Light-weight GAN
 Simple implementation of light-weight GAN structure proposed in <a href="https://openreview.net/forum?id=1Fqg133qRaI">'Towards Faster and Stabilized GAN Training for High-fidelity Few-Shot Image Synthesis'</a>, in PyTorch. 
 
-<img src="./images/panda_gen_sample256.jpg"></img>
+<img src="./images/panda_gen_sample256.jpg" width="800px"></img>
 
 256x256 Pictures of pandas generated in about 16 hours of training on a single GPU.
 
 
-<img src="./images/klimt_gen_sample256.jpg"></img>
+<img src="./images/klimt_gen_sample256.jpg" width="800px"></img>
 
 256x256 Pictures of Klimt generated in about 16 hours of training on a single GPU. 
 
@@ -24,4 +24,4 @@ The panda pictures are of much better quality than the Klimt pictures, leading t
 
 Transfer learning resulted in generated pictures of better quality, but the training took over 11 days on the single GPU.
 
-<img src="./images/klimt_gen_sample1024.jpg"></img>
+<img src="./images/klimt_gen_sample1024.png" width="800px"></img>
