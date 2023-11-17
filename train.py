@@ -77,9 +77,6 @@ def train(args):
 
     genOpt = optim.Adam(gen.parameters(), lr=lr, betas=(beta1, beta2))
     discOpt = optim.Adam(disc.parameters(), lr=lr, betas=(beta1, beta2))
-    
-    # if use_pretrained:
-    #     model.load_state_dict(torch.load(PATH))
 
     if checkpoint != 'None':
         ckpt = torch.load(f'training_runs/{checkpoint}.pth')
@@ -140,7 +137,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='desc')
 
     parser.add_argument('--run_name', type=str, default='default', help='name of the training run')
-    parser.add_argument('--path', type=str, default='dataset/klimt', help='path of resource dataset')
+    parser.add_argument('--path', type=str, default='dataset/klimt256', help='path of resource dataset')
     parser.add_argument('--iter', type=int, default=50000, help='number of iterations')
     parser.add_argument('--batch_size', type=int, default=8, help='mini batch number of images')
     parser.add_argument('--im_size', type=int, default=256, help='image resolution')
